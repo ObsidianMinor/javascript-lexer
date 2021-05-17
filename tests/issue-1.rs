@@ -5,7 +5,6 @@ extern crate pretty_assertions;
 
 use javascript_lexer::{
     internship,
-    token::{Number, Token},
     Lexer,
 };
 

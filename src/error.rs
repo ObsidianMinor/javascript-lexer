@@ -6,7 +6,7 @@ pub enum Error {
     /// Lexer failed to process all input
     LexingIncomplete,
     /// Lexer failed for unknow reasons
-    InternalError(Box<error::Error>),
+    InternalError(Box<dyn error::Error>),
 }
 
 impl fmt::Display for Error {
@@ -19,6 +19,6 @@ impl error::Error for Error {}
 
 impl From<num::ParseIntError> for Error {
     fn from(o: num::ParseIntError) -> Error {
-        Error::InternalError(box o)
+        Error::InternalError(Box::new(o))
     }
 }

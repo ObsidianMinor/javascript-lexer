@@ -4,7 +4,6 @@
 // Grammar rules are in [div](lexer::div)
 //
 // Supporting macro in [macros](lexer::macros)
-#![feature(const_fn, box_syntax, pattern, proc_macro_hygiene)]
 #![deny(
     missing_docs,
     missing_debug_implementations,

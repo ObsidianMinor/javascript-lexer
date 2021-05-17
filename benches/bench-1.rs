@@ -1,3 +1,4 @@
+/*
 #![feature(test)]
 
 extern crate javascript_lexer;
@@ -29,3 +30,4 @@ fn react_build_script(b: &mut Bencher) {
         })
     });
 }
+*/
